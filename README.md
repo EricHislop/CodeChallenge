@@ -1,10 +1,22 @@
 # Properly Coding Challenge
-Code challenge for development candidates.
+Code challenge for full stack developers.
 
 ## Objectives
+ - Asses software development skills such as:
+    - Problem solving
+    - Software quality
+    - Code quality
+    - Sizing Estimation
+    - Tools (e.g. Git)
+    - Delivery
 
 ## Format
-
+ - Assigment to be develop at the candidate own time/estiamtes. There is a limit as to how long this should take and we also measure against that.
+    - The candidate will estimate the task
+    - Develop
+    - Upload the code to a public github repository
+    - Demo the delivery and present the delivery during the technical interview
+    - Pair programming during the technical interview. 2 additional requirements will be added and should be developed during a pair programming session (20 to 45 mins max).
 
 ## Problem Statement
 
@@ -52,12 +64,10 @@ Using the **JSON dataset** that we have provided in the repository, create funct
  - All users that live in a different city that their properties
 
  - All bookings for a **given period** (start and end dates).
-    - The bookings returned should have the startDate and endDate formated to dd/MM/YYYY using the property timeZone. 
+    - The bookings returned should have the startDate and endDate formated to dd/MM/YYYY HH:mm using the property timeZone. 
     - The **given period** is also provided in the Property timeZone.
 
  - After creating the functions, expose them in a restful application and create a dashboard displaying the results
-
-
 
 Assignment for pair programming
  - How to limit the users that live in a different city to just use premium subscription?
