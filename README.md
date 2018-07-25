@@ -52,7 +52,7 @@ Using the **JSON dataset** that we have provided in the repository, create funct
  - All users that live in a different city that their properties
 
  - All bookings for a **given period** (start and end dates).
-    - The bookings returned should have the startDate and endDate formated to dd/MM/YYY using the property timeZone. 
+    - The bookings returned should have the startDate and endDate formated to dd/MM/YYYY using the property timeZone. 
     - The **given period** is also provided in the Property timeZone.
 
  - After creating the functions, expose them in a restful application and create a dashboard displaying the results
