@@ -2,7 +2,7 @@
 Code challenge for full stack developers.
 
 ## Objectives
- - Asses software development skills such as:
+ - Assess software development skills such as:
     - Problem solving
     - Software quality
     - Code quality
@@ -11,7 +11,7 @@ Code challenge for full stack developers.
     - Delivery
 
 ## Format
- - Assigment to be develop at the candidate own time/estiamtes. There is a limit as to how long this should take and we also measure against that.
+ - Assigment to be developed at the candidate's own time/estimates. There is a limit as to how long this should take and we also measure against that.
     - The candidate will estimate the task
     - Develop
     - Upload the code to a public github repository
