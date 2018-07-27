@@ -24,7 +24,6 @@ Given a **Database** of:
 ### Users
  - name
  - email
- - full address
  - location
  - subscriptionId
 
@@ -35,9 +34,8 @@ Given a **Database** of:
 
 ### Properties
  - id
- - user_id
+ - userId
  - title
- - address
  - location
  - type
  - numberOfRooms
@@ -46,13 +44,13 @@ Given a **Database** of:
 ### Bookings
 
  - id
- - property_id
+ - propertyId
  - startDate
  - endDate
- - title
 
 Using the **JSON dataset** that we have provided in the repository, create functions that return:
 
+#### Task Group 1
  - All users from a particular city
 
  - All users from a particular company (a user of a company is a user that has the same email domain. E.g john@getproperly.com and company@getproperly.com)
@@ -61,8 +59,9 @@ Using the **JSON dataset** that we have provided in the repository, create funct
 
  - All users from Premium tier subscription which have less than 4 properties
 
- - All users that live in a different city that their properties
+ - All users that live in a different city than their properties
 
+#### Task Group 2
  - After creating the functions, expose them in a restful application and create a dashboard displaying the results
 
 Assignment for pair programming
@@ -72,3 +71,10 @@ create a function that return:
  - All bookings for a **given period** (start and end dates).
     - The bookings returned should have the startDate and endDate formated to dd/MM/YYYY HH:mm using the property timeZone. 
     - The **given period** is also provided in the Property timeZone.
+
+
+## FAQ
+1 -  Where can I find the city?
+Hint: Location field contains the GPS location :)
+
+2 - 
