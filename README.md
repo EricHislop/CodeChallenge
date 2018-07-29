@@ -6,8 +6,8 @@ Code challenge for full stack developers.
     - Problem solving
     - Software quality
     - Code quality
-    - Sizing Estimation
-    - Tools (e.g. Git)
+    - Task Sizing and Work Estimation
+    - Use of Tools (e.g. Git)
     - Delivery
 
 ## Format
@@ -48,33 +48,41 @@ Given a **Database** of:
  - startDate
  - endDate
 
-Using the **JSON dataset** that we have provided in the repository, create functions that return:
+USe the **JSON dataset** that we have provided in the repository. 
 
 #### Task Group 1
+create functions that return:
  - All users from a particular city
 
- - All users from a particular company (a user of a company is a user that has the same email domain. E.g john@getproperly.com and company@getproperly.com)
+ - All users from a particular company (a user of a company is a user that has the same email domain. E.g for john@getproperly.com and company@getproperly.com "getproperly.com" is the email domain)
 
- - All users from Free tier subscription which have more than 10 properties
+ - All users from Free tier subscription which have more than 6 properties
 
  - All users from Premium tier subscription which have less than 4 properties
 
  - All users that live in a different city than their properties
 
 #### Task Group 2
- - After creating the functions, expose them in a restful application and create a dashboard displaying the results
-
-Assignment for pair programming
- - How to limit the users that live in a different city to just use premium subscription?
-
 create a function that return:
  - All bookings for a **given period** (start and end dates).
     - The bookings returned should have the startDate and endDate formated to dd/MM/YYYY HH:mm using the property timeZone. 
     - The **given period** is also provided in the Property timeZone.
 
+- All bookings longer or equal to 25 days.
+
+- All bookings shorter or equal to 3 days.
+
+- All Properties with Bookings with 1 day or less between bookings
+
+ - With the functions created expose them in a restful application and create a dashboard (simple UI) to display the results
+
+#### Task Group 3
+
+Assignment for pair programming
+ - How to limit the users that live in a different city to just use premium subscription?
+
+
 
 ## FAQ
-1 -  Where can I find the city?
-Hint: Location field contains the GPS location :)
-
-2 - 
+1 -  Where can I find the city for Property and User?
+Use the GPS location provided.
