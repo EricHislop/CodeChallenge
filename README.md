@@ -53,6 +53,7 @@ Use the **JSON dataset** that we have provided in the repository.
 
 #### Task Group 1
 Create functions that return:
+
  1.1 - All users from a particular city
 
  1.2 - All users from a particular company (a user of a company is a user that has the same email domain. E.g for john@getproperly.com and company@getproperly.com "getproperly.com" is the email domain)
@@ -65,8 +66,11 @@ Create functions that return:
 
 #### Task Group 2
 Create a function that return:
+
  2.1 - All bookings for a **given period** (start and end dates).
+ 
     2.1.a - The bookings returned should have the startDate and endDate formated to dd/MM/YYYY HH:mm using the property timeZone. 
+    
     2.1.b - The **given period** is also provided in the Property timeZone.
 
 2.2 - All bookings longer or equal to 25 days.
