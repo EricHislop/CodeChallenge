@@ -13,4 +13,12 @@ router.get('/', function(req, res, next) {
   res.json(properties);
 });
 
+
+// - 2.4. All Properties with Bookings with 1 day or less between bookings
+
+/* GET All Properties with Bookings with 1 day or less between bookings. */
+router.get('/', function(req, res, next) {
+  res.json(properties);
+});
+
 module.exports = router;

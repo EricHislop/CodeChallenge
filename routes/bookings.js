@@ -39,23 +39,29 @@ router.get("/bookings25", function(req, res, next) {
 
 /* GET bookings shorter or equal to 3 days. */
 router.get("/bookings3", function(req, res, next) {
-  res.json(bookings);
+  res.json(bookingsLessEqual3());
 });
 
-// - 2.4. All Properties with Bookings with 1 day or less between bookings
-
-function bookingsWith25Days() {
-  var bookingsOverAndEqual25 = []
+function bookingsLessEqual3() {
+  var bookingsOLessEqual3 = [];
   for (var i = 0; i < bookings.length; i++) {
     var startDate = moment(bookings[i].startDate);
     var endDate = moment(bookings[i].endDate);
-    console.log(startDate);
-    console.log(endDate);
-    console.log(Math.abs(startDate.diff(endDate, 'days'))+1);
-    var numberOfDays = Math.abs(startDate.diff(endDate, 'days'))+1;
-    console.log(numberOfDays);
-    if(numberOfDays >= 25)
-    {
+    var numberOfDays = Math.abs(startDate.diff(endDate, "days"));
+    if (numberOfDays <= 3) {
+      bookingsOLessEqual3.push(bookings[i]);
+    }
+  }
+  return bookingsOLessEqual3;
+}
+
+function bookingsWith25Days() {
+  var bookingsOverAndEqual25 = [];
+  for (var i = 0; i < bookings.length; i++) {
+    var startDate = moment(bookings[i].startDate);
+    var endDate = moment(bookings[i].endDate);
+    var numberOfDays = Math.abs(startDate.diff(endDate, "days"));
+    if (numberOfDays >= 25) {
       bookingsOverAndEqual25.push(bookings[i]);
     }
   }
@@ -88,19 +94,6 @@ function isBetweenDates(startDate, endDate) {
 //         #----------------------#
 //         ^                      ^
 //         startD              endD
-
-
-
-//     2.1.a - The bookings returned should have the startDate and endDate formated to dd/MM/YYYY HH:mm
-//     using the property timeZone.
-
-//     2.1.b - The **given period** is also provided in the Property timeZone.
-
-// - 2.2. All bookings longer or equal to 25 days.
-
-// - 2.3. All bookings shorter or equal to 3 days.
-
-// - 2.4. All Properties with Bookings with 1 day or less between bookings
 
 // - 2.5. With the functions created expose them in a restful application and create a dashboard (simple UI) to display the results
 
