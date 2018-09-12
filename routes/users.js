@@ -13,11 +13,12 @@ router.get("/", function(req, res, next) {
   res.json(users);
 });
 
-// 1.1. All users from a particular city
-
 router.get("/properties", function(req, res, next) {
   res.json(properties);
 });
+
+// 1.1. All users from a particular city
+//TODO
 
 // - 1.3. All users from Free tier subscription which have more than 6 properties
 
@@ -36,6 +37,7 @@ router.get("/properties4", function(req, res, next) {
 // 1.2. All users from a particular company (a user of a company is a user that has the same email domain.
 // E.g for john@getproperly.com and company@getproperly.com "getproperly.com" is the email domain)
 
+/*example http://localhost:3000/users/@acme.com */
 router.get("/:emaildomain", function(req, res, next) {
   var emailD = searchEmail(req.params.emaildomain);
   res.json(emailD);
