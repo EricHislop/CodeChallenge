@@ -1,9 +1,8 @@
 var express = require("express");
 var fs = require("fs");
 
-var Moment = require("moment"),
-  MomentRange = require("moment-range"),
-  moment = MomentRange.extendMoment(Moment);
+var Moment = require("moment");
+
 var router = express.Router();
 
 var bookings;
