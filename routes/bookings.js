@@ -1,7 +1,7 @@
 var express = require("express");
 var fs = require("fs");
 
-var Moment = require("moment");
+var moment = require("moment");
 
 var router = express.Router();
 
