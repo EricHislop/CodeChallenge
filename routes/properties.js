@@ -32,8 +32,8 @@ router.get("/propertiesbookings1", function(req, res, next) {
 //                        #--#
 //
 //         #--------------#  #--------------#
-//         ^              ^  ^              ^
-//         startD1    endD1  startD2         endD2
+//                        ^  ^              
+//                    endD1  startD1         
 //         booking one       booking two
 
 function propertiesWithBookings1DayBetween() {
